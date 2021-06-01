@@ -67,7 +67,7 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer]; // add current score to the player score on the interface
 
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       playing = false; //change state of the game
       document
         .querySelector(`.player--${activePlayer}`)
